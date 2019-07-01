@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="c77b72a5-8dba-4bfc-8c90-230c78f694f5" ChangeDateTime="07/01/2019 09:01:45">
+    <Property Name="ElementName" Value="[dbo].[CK_Employee_Column]" />
+    <Property Name="ElementType" Value="SqlCheckConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Employee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[CK_Employee_ResponsableID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9fed62cb-87b7-4153-941a-7a23d3025ae8" ChangeDateTime="07/01/2019 09:08:09">
+    <Property Name="ElementName" Value="[dbo].[AK_Employee_Email]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Employee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UK_Employee_Email]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="401715dd-5bf2-4b31-99dd-d5fc9d88543d" ChangeDateTime="07/01/2019 09:17:04">
+    <Property Name="ElementName" Value="[dbo].[FK_Employee_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Employee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Employee_Employee]" />
+  </Operation>
+</Operations>
